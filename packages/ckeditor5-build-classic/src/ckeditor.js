@@ -30,6 +30,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import Dropdown from './dropdown-custom/dropdown';
 
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -59,7 +60,8 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	Base64UploadAdapter
+	Base64UploadAdapter,
+	Dropdown
 ];
 
 // Editor configuration.
@@ -78,6 +80,7 @@ ClassicEditor.defaultConfig = {
 			'outdent',
 			'|',
 			'imageUpload',
+			'dropdown',
 			'blockQuote',
 			'insertTable',
 			'mediaEmbed',
